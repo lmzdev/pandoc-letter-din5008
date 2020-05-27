@@ -2,43 +2,47 @@
 
 ## Update:
 This fork supports `\tightlist`, `\section` and `\subsection` commands:
-```
+```markdown
 # Section
 ## Subsection
 
-List:
+Legacy List:
+
+- Item
+
+- Item
+
+And this becomes a \tightlist:
 
 - Item
 - Item
 ```
 
-## Description
+### Description
 
 This template allows you to write simple letters in Markdown and convert them
 into nice looking PDFs. The template is based on Koma Script and satisfies
 the German DIN 5008 norm for letters.
 
 
-## Example
+### Usage
+
+I did not follow the original advice, mine did compile just fine using 
+
+`pandoc --template="letter.latex" example.md -o example.pdf`
+
+### Example
 
 See [example folder](https://github.com/lmzdev/pandoc-letter-din5008/tree/master/example) for results.
 
-## Requirements
+### Requirements
 
 In order to use the template you must have installed the following components:
 
 - [Pandoc](http://pandoc.org/installing.html)
 - [LaTeX](https://latex-project.org/ftp.html)
 
-
-## Usage
-
-I did not follow the original advice, mine did compile just fine using 
-
-`pandoc --template="letter.latex" example.md -o example.pdf`
-
-
-## Configuration
+### Configuration
 
 The following yaml variables are supported:
 
