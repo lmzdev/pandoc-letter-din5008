@@ -1,4 +1,5 @@
 ## Example letter:
+See pdf above for pandoc output
 
 ```markdown
 ---
