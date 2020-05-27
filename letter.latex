@@ -35,8 +35,8 @@
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
-\newcommand\section[1]{\vspace{0.8em}\textbf{\large#1\normalsize}}
-\newcommand\subsection[1]{\vspace{0.5em}\textbf{#1}}
+\newcommand\section[1]{\vspace{1em}\textbf{\Large#1\normalsize}}
+\newcommand\subsection[1]{\vspace{0.5em}{\fontfamily{\familydefault}\selectfont\textbf{#1}}}
 
 \begin{document}
     \setkomavar{fromname}{$author$}
