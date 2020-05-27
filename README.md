@@ -1,5 +1,9 @@
 # Pandoc Letter Template (DIN 5008)
 
+This template allows you to write simple letters in Markdown and convert them
+into nice looking PDFs. The template is based on Koma Script and satisfies
+the German DIN 5008 norm for letters.
+
 ## Update:
 This fork supports `\tightlist`, `\section` and `\subsection` commands:
 ```markdown
@@ -17,13 +21,6 @@ And this becomes a \tightlist:
 - Item
 - Item
 ```
-
-### Description
-
-This template allows you to write simple letters in Markdown and convert them
-into nice looking PDFs. The template is based on Koma Script and satisfies
-the German DIN 5008 norm for letters.
-
 
 ### Usage
 
