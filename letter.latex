@@ -21,6 +21,8 @@
 
 \usepackage[right]{eurosym}
 
+\renewcommand*\familydefault{\sfdefault} 
+
 \makeatletter
     \setlength{\@tempskipa}{-1.2cm}%
     \@addtoplength{toaddrheight}{\@tempskipa}
@@ -52,15 +54,15 @@
             $address$$sep$\\
         $endfor$
     }
+        {\fontfamily{bch}\selectfont
+            \opening{$opening$}
 
-        \opening{$opening$}
+            $body$
 
-        $body$
+            \closing{$closing$}
 
-        \closing{$closing$}
-
-        \ps $postskriptum$
-
+            \ps $postskriptum$
+        }
         $if(encludes)$
             \setkomavar*{enclseparator}{Anlage}
             \encl{$encludes$}
