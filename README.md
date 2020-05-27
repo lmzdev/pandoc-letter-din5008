@@ -1,5 +1,17 @@
 # Pandoc Letter Template (DIN 5008)
 
+## Update:
+This fork supports `\tightlist`, `\section` and `\subsection` commands:
+```
+# Section
+## Subsection
+
+List:
+
+- Item
+- Item
+```
+
 ## Description
 
 This template allows you to write simple letters in Markdown and convert them
@@ -9,36 +21,7 @@ the German DIN 5008 norm for letters.
 
 ## Example
 
-A simple letter in Markdown looks like the following:
-
-```markdown
----
-author: Max Mustermann
-phone: +49 1234 56789
-email: max.mustermann@beispiel.de
-date: 01.08.2016
-place: Musterstadt
-subject: Titel vom Brief
-return-address:
- - Musterstraße
- - 12345 Berlin
-address:
- - Musterfirma GmbH
- - Max Mustermann
- - Musterstraße
- - 12345 Musterstadt
-opening: Sehr geehrte Damen und Herren,
-closing: Mit freundlichen Grüßen
-encludes: Muster, Muster, Muster
-...
-```
-
-The compiled result will then look like this:
-
-![alt Letter](https://github.com/benedu/pandoc-letter/raw/master/example/letter.png)
-
-You can also download the compiled PDF [here](https://github.com/benedu/pandoc-letter/raw/master/example/letter.pdf).
-
+See [example folder](https://github.com/lmzdev/pandoc-letter-din5008/tree/master/example) for results.
 
 ## Requirements
 
@@ -50,18 +33,9 @@ In order to use the template you must have installed the following components:
 
 ## Usage
 
-Before you can make use of the template you need to move the LaTeX template file
-into Pandocs template directory:
+I did not follow the original advice, mine did compile just fine using 
 
-```
-mkdir ~/.pandoc
-mv your-repo-path/letter.latex ~/.pandoc/templates
-```
-
-After creating a letter written in Markdown you can compile it into PDF with the
-following line:
-
-`pandoc letter.md -s -o letter.pdf --template="letter"`
+`pandoc --template="letter.latex" example.md -o example.pdf`
 
 
 ## Configuration
