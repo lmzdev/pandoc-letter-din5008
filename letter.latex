@@ -35,6 +35,9 @@
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
+\renewcommand{\section}{\familydefault\Large\bfseries\uppercase}
+\renewcommand{\subsection}{\familydefault\large\bfseries}
+
 \begin{document}
     \setkomavar{fromname}{$author$}
     \renewcommand*{\raggedsignature}{\raggedright}
