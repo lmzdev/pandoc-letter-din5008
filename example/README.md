@@ -1,5 +1,6 @@
-## Example letter:
 See pdf above for pandoc output
+
+## Example letter:
 
 ```markdown
 ---
